@@ -6,14 +6,14 @@ const Tabs = ({tabProp}) => {
   return (
     <div>
         <ul>
-            {tabProp.map((tab)=>
+            {tabProp.map((tab)=>(
                 <li onClick={()=>setContent(tab.content)}> {tab.title}</li>
-            )}
+            ))}
         </ul>
         <p>{content}</p>
     </div>
   )
-}
+} 
 
 Tabs.propTypes = {}
 
